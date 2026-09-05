@@ -537,8 +537,8 @@ export function PortfolioPage() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0b0f13]/80 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-amber-400/40 bg-zinc-900 text-sm font-semibold text-amber-300">
-              ID
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-amber-400/40 bg-zinc-900">
+              <Image src="/favicon.svg" alt="Ikasha Dissanayake logo" width={40} height={40} className="h-full w-full object-cover" />
             </div>
             <div>
               <div className="text-sm font-medium uppercase tracking-[0.32em] text-zinc-300">Ikasha</div>
