@@ -675,13 +675,16 @@ export function PortfolioPage() {
                       { src: "/images/portrait-formal.jpg", alt: "Ikasha Dissanayake formal portrait" },
                       { src: "/images/portrait-dress.jpg", alt: "Ikasha Dissanayake portrait in a dress" },
                       { src: "/images/portrait-headshot.jpg", alt: "Ikasha Dissanayake professional headshot" },
-                    ].map((image) => (
+                    ].map((image, index) => (
                       <div key={image.src} className="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/20 p-2">
                         <Image
                           src={image.src}
                           alt={image.alt}
                           width={720}
                           height={960}
+                          quality={72}
+                          loading={index === 0 ? "eager" : "lazy"}
+                          sizes="(max-width: 640px) 42vw, (max-width: 1024px) 28vw, 220px"
                           className="h-full w-full object-contain"
                         />
                       </div>
@@ -1197,6 +1200,9 @@ export function PortfolioPage() {
                     alt={image.alt}
                     width={720}
                     height={960}
+                    quality={72}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 90vw, 25vw"
                     className="max-h-[34rem] w-full object-contain"
                   />
                 </div>
