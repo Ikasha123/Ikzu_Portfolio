@@ -667,16 +667,11 @@ export function PortfolioPage() {
 
               <motion.div {...motionProps} className="relative">
                 <div className="rounded-[2rem] border border-white/10 bg-zinc-950/80 p-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
-                  <div className="mb-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  <div className="mb-5 grid grid-cols-1 gap-3">
                     {[
-                      { src: "/images/profile.jpg", alt: "Ikasha Dissanayake" },
-                      { src: "/images/professional-portrait.jpg", alt: "Ikasha Dissanayake professional portrait" },
-                      { src: "/images/top-graduation-portrait.jpg", alt: "Ikasha Dissanayake portrait" },
-                      { src: "/images/portrait-formal.jpg", alt: "Ikasha Dissanayake formal portrait" },
-                      { src: "/images/portrait-dress.jpg", alt: "Ikasha Dissanayake portrait in a dress" },
-                      { src: "/images/portrait-headshot.jpg", alt: "Ikasha Dissanayake professional headshot" },
+                      { src: "/images/top-ee.jpg", alt: "Ikasha Dissanayake" },
                     ].map((image, index) => (
-                      <div key={image.src} className="flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/20 p-2">
+                      <div key={image.src} className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/20 p-2">
                         <Image
                           src={image.src}
                           alt={image.alt}
