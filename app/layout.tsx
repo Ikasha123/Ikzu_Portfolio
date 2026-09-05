@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   description:
     "Computing graduate and IT professional specializing in IT support, systems and networking, software development, and UI/UX design.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/fv.png",
+    shortcut: "/fv.png",
+    apple: "/fv.png",
   },
   openGraph: {
     title: "Ikasha Dissanayake",
